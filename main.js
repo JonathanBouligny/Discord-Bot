@@ -4,6 +4,7 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 const help_command = (message) => {
+    console.log(message.author.username + " ran help command");
     message.channel.send("Commands List: " +
         "\n!UpdateNick (SummonerName) - will update your name in the server with your solo rank and current LP" +
         "\n!HelpRitoNamer - You already know what this does lul")
@@ -11,6 +12,8 @@ const help_command = (message) => {
 
 const update_nick_command = (name, message) => {
     // Secret
+    console.log(message.author.username + " ran update nick command command");
+
     fetch('https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/' + encodeURIComponent(name), {method: 'GET', headers: {
             "X-Riot-Token": process.env.Riot_API_Key
         }})
