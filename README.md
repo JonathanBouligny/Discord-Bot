@@ -6,3 +6,5 @@ it can change everyones nicknames
 
 Link to add bot
 https://discord.com/api/oauth2/authorize?client_id=856926176596852736&scope=bot&permissions=201326592
+
+Deployed to digitalocean
