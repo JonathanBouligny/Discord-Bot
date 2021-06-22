@@ -74,13 +74,13 @@ client.on('message', message => {
     var splitMsg = splitWithTail(message.content, " ", 1)
 
     if(!splitMsg)
-        return
+        return;
 
     if(splitMsg[0][0] !== '!')
-        return
+        return;
 
     if(message.author.username === 'Rito Rank Namer')
-        return
+        return;
 
     switch(splitMsg[0]) {
         case "!UpdateNick":
@@ -99,5 +99,3 @@ client.on('message', message => {
 });
 
 client.login(process.env.Discord_API_Key);
-
-// change role order for server
