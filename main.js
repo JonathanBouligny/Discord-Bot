@@ -82,15 +82,15 @@ client.on('message', message => {
     if(message.author.username === 'Rito Rank Namer')
         return;
 
-    switch(splitMsg[0]) {
-        case "!UpdateNick":
+    switch(splitMsg[0].toLowerCase()) {
+        case "!updatenick":
             if(splitMsg[1]) {
                 update_nick_command(splitMsg[1], message)
             } else {
                 message.channel.send("Incorrect input for !UpdateNick. Please type '!UpdateNick (SummonerName)'");
             }
             break;
-        case "!HelpRitoNamer":
+        case "!helpritonamer":
             help_command(message);
             break;
         default:
