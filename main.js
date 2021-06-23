@@ -81,7 +81,7 @@ client.on('message', message => {
 
     if(message.author.username === 'Rito Rank Namer')
         return;
-
+// GO GO GO
     switch(splitMsg[0].toLowerCase()) {
         case "!updatenick":
             if(splitMsg[1]) {
