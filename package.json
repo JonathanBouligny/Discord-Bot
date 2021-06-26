@@ -1,0 +1,25 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "General bot for fun stuff",
+  "main": "main.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "discord.js": "^12.5.3",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start" : "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanBouligny/Discord-Bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathanBouligny/Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/JonathanBouligny/Discord-Bot#readme"
+}
